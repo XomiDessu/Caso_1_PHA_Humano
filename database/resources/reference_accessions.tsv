@@ -1,0 +1,7 @@
+resource	accession	URL
+MANE_transcript	NM_000277.3	https://www.ncbi.nlm.nih.gov/nuccore/NM_000277.3
+protein	NP_000268.1	https://www.ncbi.nlm.nih.gov/protein/NP_000268.1
+RefSeqGene	NG_008690.2	https://www.ncbi.nlm.nih.gov/nuccore/NG_008690.2
+Ensembl_transcript	ENST00000553106.6	https://www.ensembl.org/Homo_sapiens/Transcript/Summary?t=ENST00000553106.6
+experimental_structure	6HYC	https://www.rcsb.org/structure/6HYC
+ClinVar_target_reference	VCV000000577	https://www.ncbi.nlm.nih.gov/clinvar/variation/577/
