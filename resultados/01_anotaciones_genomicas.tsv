@@ -1,0 +1,16 @@
+variant_id	chrom	pos	end_pos	ref	alt	genomic_location	variant_type	variant_subtype	POPAF	af_category	is_major_allele	ubicacion	distancia_borde_exon
+VAR001	chr12	102840437	102840437	A	G	chr12:102840437	SNV	transición	0.04124	Baja frecuencia (1% - 5%)	False	CDS	37
+VAR002	chr12	102840473	102840473	G	A	chr12:102840473	SNV	transición	0.00779	Rara (0.1% - 1%)	False	CDS	42
+VAR003	chr12	102840493	102840493	G	A	chr12:102840493	SNV	transición	0.00092	Muy rara (0.01% - 0.1%)	False	CDS	22
+VAR004	chr12	102843690	102843690	G	C	chr12:102843690	SNV	transversión	0.84953	Común / Alelo mayoritario (>50%)	True	CDS	44
+VAR005	chr12	102844388	102844388	T	G	chr12:102844388	SNV	transversión	4e-06	Ultra-rara (<0.01%)	False	CDS	43
+VAR006	chr12	102846901	102846901	G	A	chr12:102846901	SNV	transición	0.01582	Baja frecuencia (1% - 5%)	False	CDS	6
+VAR007	chr12	102852917	102852917	C	T	chr12:102852917	SNV	transición	1e-05	Ultra-rara (<0.01%)	False	CDS	33
+VAR008	chr12	102852922	102852922	C	T	chr12:102852922	SNV	transición	0.19782	Común (5% - 50%)	False	CDS	28
+VAR009	chr12	102855233	102855233	G	A	chr12:102855233	SNV	transición	0.0004	Muy rara (0.01% - 0.1%)	False	CDS	97
+VAR010	chr12	102877572	102877572	G	A	chr12:102877572	SNV	transición	0.23047	Común (5% - 50%)	False	Intrón	22
+VAR011	chr12	102894737	102894737	G	A	chr12:102894737	SNV	transición	5e-05	Ultra-rara (<0.01%)	False	CDS	2
+VAR012	chr12	102894768	102894777	GGACAGTGGC	G	chr12:102894768-102894777	Deleción	deleción de 9 pb (in-frame)	1e-05	Ultra-rara (<0.01%)	False	CDS	33
+VAR013	chr12	102894807	102894807	T	C	chr12:102894807	SNV	transición	0.00013	Muy rara (0.01% - 0.1%)	False	CDS	72
+VAR014	chr12	102894859	102894859	C	G	chr12:102894859	SNV	transversión	0.0	Ausente (0)	False	CDS	59
+VAR015	chr12	102912888	102912888	T	C	chr12:102912888	SNV	transición	0.0001	Muy rara (0.01% - 0.1%)	False	CDS	10
