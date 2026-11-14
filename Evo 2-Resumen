@@ -1,0 +1,57 @@
+# Resumen de Implementación: Modelo Evo 2 en el Gen *PAH*
+
+---
+
+### 1. Configuración y API de NVIDIA (Secciones 1 y 2)
+
+* **Autenticación con NVIDIA NIM:** Se configuraron los encabezados de autorización mediante *Bearer token* y se vincularon los endpoints de Evo2 (`evo2-7b` y `evo2-40b`).
+* **Descarga de secuencias de Ensembl (`obtener_secuencia_ensembl`):** Se creó la función que consulta la API REST de Ensembl para extraer la ventana de **1,000 pares de bases (pb)** en el cromosoma 12 (`POS - 500` a `POS + 499`), centrada exactamente en cada variante del genoma humano (GRCh38).
+
+---
+
+### 2. Implementación de la función de puntuación (Sección 3: `puntuar_variante`)
+
+Aquí se resolvió el núcleo algorítmico del análisis:
+
+* **Corrección del payload para NVIDIA:** Se sustituyó el formato genérico por el formato oficial de la API de NVIDIA (`"sequence": seq, "output_layers": ["unembed"]`).
+* **Decodificación de tensores `.npz` en Base64:** La API regresa una matriz comprimida; el código la descomprime en memoria y extrae los *logits* de forma `(1000, 512)`.
+* **Cálculo de $\Delta\log P$ mediante `log_softmax`:** Se calcula la probabilidad logarítmica de los nucleótidos evaluando los códigos ASCII ($A=65$, $C=67$, $G=71$, $T=84$).
+* **Predicción autorregresiva correcta:** Como el modelo predice la siguiente base, la base central en la posición $500$ se evalúa con el *logit* de la fila anterior ($499$):
+  $$\Delta\log P_{\text{sitio}} = \log P(\text{ALT}) - \log P(\text{REF})$$
+* **Evaluación en ambas hebras (Genoma vs. Transcrito):**
+  * **Hebra genómica ($+$):** Evalúa la secuencia directa.
+  * **Hebra del transcrito ($-$):** Se calcula sobre el **reverso complementario**, reflejando la orientación real de lectura del gen *PAH*.
+* **Manejo de deleciones/indels:** Se identificó que `VAR012` es una deleción de 9 pb (`GGACAGTGGC > G`). Al no ser un SNV de una sola base, el código le asigna `NaN` automáticamente, evitando errores de ejecución.
+* **Resiliencia ante caídas de la API:** Se incorporó soporte para respuestas `202 Accepted` (peticiones en cola de NVIDIA) y *fallback* a `evo2-40b` para evitar los *timeouts* (Error 504) del clúster de 7B.
+
+---
+
+### 3. Generación de la tabla oficial (Sección 4: `resultados/evo2_deltalogp.tsv`)
+
+* Se conectó con el archivo de variantes `database/genomic/PAH_variants_masked_GRCh38.vcf`.
+* Se computaron las 15 variantes y se estructuró la tabla con las **5 columnas obligatorias** requeridas por el Plan de Trabajo:
+  1. `ID`
+  2. `delta_sitio_genoma`
+  3. `delta_ventana_genoma`
+  4. `delta_sitio_gen`
+  5. `delta_ventana_gen`
+* **Escritura progresiva:** Los datos se guardaron fila por fila en el archivo `resultados/evo2_deltalogp.tsv`.
+* **Optimización de ejecución:** Se agregó la bandera `RECALCULAR = False` para que, al abrir el *notebook* en Colab, cargue la tabla en 1 segundo sin volver a gastar tiempo ni cuota de API.
+
+---
+
+### 4. Visualización y Gráfica (Sección 5)
+
+* Se programó la gráfica de barras de $\Delta\log P$ ordenada de más negativa a menos negativa (de mayor impacto a menor impacto).
+* Se exportó la imagen en alta resolución a `resultados/figuras/evo2_deltalogp.png`.
+
+---
+
+### 5. Selección de candidatos para RF3 y Cierre (Secciones 6 y Cierre)
+
+* **Variantes más penalizadas evolutivamente:**
+  * **`VAR007`** ($-7.83$) y **`VAR014`** ($-5.94$): Máxima penalización en secuencia.
+  * **`VAR005`** ($-4.14$, y $-29.51$ en ventana): Frecuencia alélica ultra-rara ($POPAF = 4 \times 10^{-6}$).
+  * **`VAR004`** ($-0.79$ / $+1.15$): Control tolerado/benigno con alta frecuencia poblacional ($85\%$).
+* **Justificación metodológica:** Se redactó el cierre en el formato exigido: **Observamos $\rightarrow$ Inferimos $\rightarrow$ La evidencia aporta $\rightarrow$ Concluimos $\rightarrow$ Falta evidencia**.rado/benigno con alta frecuencia poblacional ($85\%$).
+* Se redactó la justificación metodológica final en el formato exigido: **Observamos → Inferimos → La evidencia aporta → Concluimos → Falta evidencia**.
