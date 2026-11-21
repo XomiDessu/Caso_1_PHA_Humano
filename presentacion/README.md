@@ -1,1 +1,0 @@
-Plantilla y diapositivas finales.
