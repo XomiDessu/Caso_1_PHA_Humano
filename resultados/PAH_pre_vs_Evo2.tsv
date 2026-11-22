@@ -1,0 +1,16 @@
+ID	protein_change	transcript_change	consequence	dominio	POPAF	BLOSUM62	puntaje_inicial	rank_inicial	delta_sitio_genoma	delta_ventana_genoma	delta_sitio_gen	delta_ventana_gen	rank_evo2	cambio_vs_inicial	seleccion_RF3
+VAR003	p.Arg408Trp	c.1222C>T	missense	catalítico	0.00092	-3.0	8.0	1	-7.110806	-39.606072	-5.991341	-28.592772	2.0	-1.0	True
+VAR005	p.Asp338Ala	c.1013A>C	missense	catalítico	4e-06	-2.0	8.0	2	-5.704642	-11.770675	-6.196242	-24.75571	3.0	-1.0	False
+VAR007	p.Gly247Asp	c.740G>A	missense	catalítico	1e-05	-1.0	7.5	3	-9.453126	-42.836321	-8.703106	-45.113534	1.0	2.0	True
+VAR011	p.Thr117Ile	c.350C>T	missense	regulador	5e-05	-1.0	7.5	4	0.023005	-14.572761	-7.093858	-15.15743	6.0	-2.0	False
+VAR012	p.Ala104_Val106del	c.310_318del	delecion_in_frame	regulador	1e-05		7.5	5							False
+VAR015	p.Tyr24Cys	c.71A>G	missense	regulador	0.0001	-2.0	7.0	6	-6.007708	-30.782289	-0.13162	-39.824848	5.0	1.0	False
+VAR014	p.Glu76Asp	c.228G>C	missense	regulador	0.0	2.0	5.5	7	-7.753203	-9.635478	-5.662465	-6.590936	4.0	3.0	False
+VAR013	p.Ile94Val	c.280A>G	missense	regulador	0.00013	3.0	5.0	8	-4.846032	-5.131055	-5.511673	-4.910627	7.0	1.0	False
+VAR009	p.Cys203=	c.609C>T	sinonima	catalítico	0.0004		2.5	9	-1.757965	-2.27923	-2.31526	-2.967168	8.0	1.0	False
+VAR002	p.Tyr414=	c.1242C>T	sinonima	catalítico	0.00779		2.0	10	0.285622	2.449205	2.402273	2.292041	13.0	-3.0	False
+VAR006	p.Leu321=	c.963C>T	sinonima	catalítico	0.01582		1.5	11	2.326489	1.407933	0.992696	-0.224369	12.0	-1.0	False
+VAR001	p.Asn426=	c.1278T>C	sinonima	catalítico	0.04124		1.5	12	0.007586	0.9135	-1.431482	-1.91214	10.0	2.0	False
+VAR008	p.Val245=	c.735G>A	sinonima	catalítico	0.19782		1.0	13	-3.846503	-3.076057	-2.1794	-1.509231	9.0	4.0	False
+VAR004	p.Leu385=	c.1155C>G	sinonima	catalítico	0.84953		1.0	14	0.794397	3.720522	2.557841	5.527434	14.0	0.0	False
+VAR010			fuera_del_CDS	fuera del CDS	0.23047		0.5	15	-0.27652	0.827136	-0.147492	0.132489	11.0	4.0	False
