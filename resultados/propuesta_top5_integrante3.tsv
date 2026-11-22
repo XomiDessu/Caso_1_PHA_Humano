@@ -1,0 +1,6 @@
+propuesta_rank	ID	transcript_change	protein_change_predicho	consequence	POPAF	BLOSUM62	justificacion	alcance
+1	VAR012	c.310_318del	p.(Ala104_Val106del)	delecion_in_frame	1e-05		Elimina tres residuos consecutivos y conserva el marco; prioridad exploratoria por magnitud del cambio. POPAF 0.00001. No demuestra mayor daño que un missense.	Propuesta previa a Evo2; no es ranking inicial consensuado.
+2	VAR003	c.1222C>T	p.(Arg408Trp)	missense	0.00092	-3.0	Arg→Trp cambia un residuo básico por uno aromático; BLOSUM62 −3. POPAF 0.00092; menor frecuencia no es requisito para un cambio importante.	Propuesta previa a Evo2; no es ranking inicial consensuado.
+3	VAR005	c.1013A>C	p.(Asp338Ala)	missense	4e-06	-2.0	Asp→Ala elimina una carga negativa; BLOSUM62 −2 y POPAF 0.000004. Requiere comprobar entorno y actividad.	Propuesta previa a Evo2; no es ranking inicial consensuado.
+4	VAR007	c.740G>A	p.(Gly247Asp)	missense	1e-05	-1.0	Gly→Asp incorpora una cadena lateral ácida donde había glicina; BLOSUM62 −1 y POPAF 0.00001. Hipótesis de efecto local por comprobar.	Propuesta previa a Evo2; no es ranking inicial consensuado.
+5	VAR015	c.71A>G	p.(Tyr24Cys)	missense	0.0001	-2.0	Tyr→Cys cambia una cadena aromática por un tiol; BLOSUM62 −2 y POPAF 0.0001. Cambio menos conservador que Ile94Val o Glu76Asp.	Propuesta previa a Evo2; no es ranking inicial consensuado.
