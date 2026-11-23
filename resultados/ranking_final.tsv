@@ -1,0 +1,6 @@
+Rank_final	Variante	Rank_inicial	Cambio	Evidencia
+1	VAR007 p.Gly247Asp	3	Sube 2	Primer lugar de Evo2 en el consenso, ultra-rara y con un cambio de carga en el dominio catalítico.
+2	VAR003 p.Arg408Trp	1	Baja 1	Cambio químico más drástico del panel y mayor penalización en la ventana del gen, pero señal casi nula en el sitio de esa hebra.
+3	VAR005 p.Asp338Ala	2	Baja 1	Ultra-rara, pierde una carga en el dominio catalítico; tercer lugar de Evo2.
+4	VAR014 p.Glu76Asp	7	Sube 3	Ausente en la población y penalizada de forma consistente en ambas hebras; el cambio conservador la deja detrás de las tres catalíticas.
+5	VAR011 p.Thr117Ile	4	Baja 1	Ultra-rara y cerca de un sitio de splicing; Evo2 la penaliza solo en la orientación del gen.
