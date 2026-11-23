@@ -1,0 +1,9 @@
+ID	pLDDT_local_WT	exposicion_WT	empaquetamiento_CA_10A	contactos_polares_3_5A	RMSD_vs_WT	evaluacion_estructural
+VAR003	88.41	Intermedio	14	4	N/D (sin modelo RF3 mutante)	Pierde 4 puentes de H de anclaje entre dominio catalítico y oligomerización
+VAR005	94.52	Expuesto	6	1	N/D (sin modelo RF3 mutante)	Elimina carga negativa en superficie del dominio catalítico (muy alta confianza)
+VAR007	86.9	Enterrado	27	0	N/D (solo CSV mutante; sin .cif)	Introduce carga negativa y volumen en bolsillo hidrofóbico muy enterrado (27 Cα)
+VAR011	74.0	Intermedio	14	2	N/D (sin modelo RF3 mutante)	Enlazador flexible; pierde contacto polar con Lys114/Pro119
+VAR012	78.56	Enterrado	17	4	N/D (sin modelo RF3 mutante)	Deleción en núcleo del dominio ACT; rompe 4 contactos polares de lámina β
+VAR013	86.65	Enterrado	17	5	N/D (sin modelo RF3 mutante)	Sustitución hidrofóbica conservadora en núcleo del dominio ACT
+VAR014	83.81	Enterrado	18	4	N/D (sin modelo RF3 mutante)	Sustitución ácida conservadora en interior del dominio ACT; conserva carga
+VAR015	22.3	Expuesto	6	2	N/D (sin modelo RF3 mutante)	Extremo N-terminal intrínsecamente desordenado (pLDDT 22.3; baja confianza)
