@@ -1,16 +1,16 @@
 variant_id	genomic_location	region	variant_type	transcript_change	protein_change	initial_priority	evidence	Evo2_result	RF3_or_structure_result	final_priority	limitations
-VAR001											
-VAR002											
-VAR003											
-VAR004											
-VAR005											
-VAR006											
-VAR007											
-VAR008											
-VAR009											
-VAR010											
-VAR011											
-VAR012											
-VAR013											
-VAR014											
-VAR015											
+VAR001	chr12:102840437	CDS (catalítico)	SNV	c.1278T>C	p.Asn426=	12	sinónima; POPAF 0.04124; dominio catalítico; 37 nt del borde de exón	ΔlogP sitio gen -0.45; ventana gen -1.11; lugar Evo2 10/14	No aplica: no cambia la proteína	Fuera del Top 5	No cambia la proteína; no se evaluó el efecto sobre el splicing.
+VAR002	chr12:102840473	CDS (catalítico)	SNV	c.1242C>T	p.Tyr414=	10	sinónima; POPAF 0.00779; dominio catalítico; 42 nt del borde de exón	ΔlogP sitio gen -0.10; ventana gen 2.45; lugar Evo2 11/14	No aplica: no cambia la proteína	Fuera del Top 5	No cambia la proteína; no se evaluó el efecto sobre el splicing.
+VAR003	chr12:102840493	CDS (catalítico)	SNV	c.1222C>T	p.Arg408Trp	1	missense; POPAF 0.00092; BLOSUM62 -3; dominio catalítico; 22 nt del borde de exón	ΔlogP sitio gen 0.58; ventana gen -31.65; lugar Evo2 4/14	Pendiente	2	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
+VAR004	chr12:102843690	CDS (catalítico)	SNV	c.1155C>G	p.Leu385=	14	sinónima; POPAF 0.84953; dominio catalítico; 44 nt del borde de exón	ΔlogP sitio gen 1.15; ventana gen 3.64; lugar Evo2 12/14	No aplica: no cambia la proteína	Fuera del Top 5	No cambia la proteína; no se evaluó el efecto sobre el splicing.
+VAR005	chr12:102844388	CDS (catalítico)	SNV	c.1013A>C	p.Asp338Ala	2	missense; POPAF 4e-06; BLOSUM62 -2; dominio catalítico; 43 nt del borde de exón	ΔlogP sitio gen -0.20; ventana gen -29.51; lugar Evo2 3/14	Pendiente	3	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
+VAR006	chr12:102846901	CDS (catalítico)	SNV	c.963C>T	p.Leu321=	11	sinónima; POPAF 0.01582; dominio catalítico; 6 nt del borde de exón	ΔlogP sitio gen 1.47; ventana gen 4.21; lugar Evo2 14/14	No aplica: no cambia la proteína	Fuera del Top 5	No cambia la proteína; no se evaluó el efecto sobre el splicing.
+VAR007	chr12:102852917	CDS (catalítico)	SNV	c.740G>A	p.Gly247Asp	3	missense; POPAF 1e-05; BLOSUM62 -1; dominio catalítico; 33 nt del borde de exón	ΔlogP sitio gen -1.48; ventana gen -21.58; lugar Evo2 1/14	Pendiente	1	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
+VAR008	chr12:102852922	CDS (catalítico)	SNV	c.735G>A	p.Val245=	13	sinónima; POPAF 0.19782; dominio catalítico; 28 nt del borde de exón	ΔlogP sitio gen -1.09; ventana gen -8.63; lugar Evo2 8/14	No aplica: no cambia la proteína	Fuera del Top 5	No cambia la proteína; no se evaluó el efecto sobre el splicing.
+VAR009	chr12:102855233	CDS (catalítico)	SNV	c.609C>T	p.Cys203=	9	sinónima; POPAF 0.0004; dominio catalítico; 97 nt del borde de exón	ΔlogP sitio gen -2.39; ventana gen -4.57; lugar Evo2 9/14	No aplica: no cambia la proteína	Fuera del Top 5	No cambia la proteína; no se evaluó el efecto sobre el splicing.
+VAR010	chr12:102877572	Intrón	SNV			15	fuera del CDS; POPAF 0.23047; dominio fuera del CDS; 22 nt del borde de exón	ΔlogP sitio gen -0.11; ventana gen 6.39; lugar Evo2 12/14	No aplica: no cambia la proteína	Fuera del Top 5	Intrónica; no se evaluó el efecto sobre el splicing ni la expresión.
+VAR011	chr12:102894737	CDS (regulador)	SNV	c.350C>T	p.Thr117Ile	4	missense; POPAF 5e-05; BLOSUM62 -1; dominio regulador; 2 nt del borde de exón	ΔlogP sitio gen -5.18; ventana gen -5.90; lugar Evo2 5/14	Pendiente	5	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
+VAR012	chr12:102894768-102894777	CDS (regulador)	Deleción	c.310_318del	p.Ala104_Val106del	5	deleción in-frame; POPAF 1e-05; dominio regulador; 33 nt del borde de exón	No evaluada (deleción)	Pendiente	Fuera del Top 5	Evo2 no evalúa indels; sin modelo estructural ni datos de actividad.
+VAR013	chr12:102894807	CDS (regulador)	SNV	c.280A>G	p.Ile94Val	8	missense; POPAF 0.00013; BLOSUM62 3; dominio regulador; 72 nt del borde de exón	ΔlogP sitio gen -4.95; ventana gen -5.63; lugar Evo2 6/14	Pendiente	Fuera del Top 5	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
+VAR014	chr12:102894859	CDS (regulador)	SNV	c.228G>C	p.Glu76Asp	7	missense; POPAF 0; BLOSUM62 2; dominio regulador; 59 nt del borde de exón	ΔlogP sitio gen -5.85; ventana gen -8.24; lugar Evo2 2/14	Pendiente	4	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
+VAR015	chr12:102912888	CDS (regulador)	SNV	c.71A>G	p.Tyr24Cys	6	missense; POPAF 0.0001; BLOSUM62 -2; dominio regulador; 10 nt del borde de exón	ΔlogP sitio gen -0.03; ventana gen -13.40; lugar Evo2 7/14	Pendiente	Fuera del Top 5	Predicción de secuencia; sin datos de actividad enzimática ni estabilidad.
